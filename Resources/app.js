@@ -9,7 +9,7 @@ config = {
 }
 try
 {
-	Ti.include(config.viewPath+'mainView.js');
+	Titanium.include(config.viewPath+'mainView.js');
 	mainView.open(config);
 }
 catch(e)
