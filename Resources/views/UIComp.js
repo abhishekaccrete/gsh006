@@ -9,7 +9,7 @@ UIComp.window = function(bgColor,bolExitOnClose)
 		model: true,
 		barImage : config.imgPath+'global/tab_bar/tab_bar.png'
 	});
-}
+};
 
 UIComp.scrollView = function()
 {
@@ -20,14 +20,14 @@ UIComp.scrollView = function()
 		showVerticalScrollIndicator:true,
 		showHorizontalScrollIndicator:true
 	});
-}
+};
 
 UIComp.navGroup = function(win)
 {
 	return Ti.UI.iPhone.createNavigationGroup({
 		window: win
 	});
-}
+};
 
 UIComp.label = function(rLeft, rTop, rWidth, rHeight, sText)
 {
@@ -38,13 +38,13 @@ UIComp.label = function(rLeft, rTop, rWidth, rHeight, sText)
 		height: rHeight,
 		text: sText
 	});
-}
+};
 
 
 UIComp.tabGroup = function()
 {
 	return Ti.UI.createTabGroup();
-}
+};
 
 UIComp.tab = function(sTitle, winForTab)
 {
@@ -52,7 +52,7 @@ UIComp.tab = function(sTitle, winForTab)
 		title: sTitle,
 		window: winForTab
 	});
-}
+};
 
 UIComp.textField = function(rLeft, rTop, rWidth, rHeight, sPlaceHolderText)
 {
@@ -63,7 +63,7 @@ UIComp.textField = function(rLeft, rTop, rWidth, rHeight, sPlaceHolderText)
 		height: rHeight,
 		hintText: sPlaceHolderText
 	});
-}
+};
 
 UIComp.tableView = function(tblData)
 {
@@ -71,7 +71,7 @@ UIComp.tableView = function(tblData)
 	{
 		data: tblData
 	});
-}
+};
 
 UIComp.mapView = function(rLeft,rTop,rWidth,rHeight)
 {
@@ -86,7 +86,7 @@ UIComp.mapView = function(rLeft,rTop,rWidth,rHeight)
     	regionFit:true,
     	userLocation:true
 	});
-}
+};
 
 UIComp.view = function(bgColor,rLeft,rTop,rWidth,rHeight)
 {
@@ -97,7 +97,7 @@ UIComp.view = function(bgColor,rLeft,rTop,rWidth,rHeight)
 		width: rWidth,
 		height: rHeight
 	});
-}
+};
 
 UIComp.tableView = function(tblData,tblstyle)
 {
@@ -107,7 +107,7 @@ UIComp.tableView = function(tblData,tblstyle)
 		style: tblstyle,
 		editable: true
 	});
-}
+};
 
 UIComp.button = function(sTitle,rLeft,rTop,rWidth,rHeight)
 {
@@ -118,7 +118,7 @@ UIComp.button = function(sTitle,rLeft,rTop,rWidth,rHeight)
 		width: rWidth,
 		height: rHeight
 	});
-}
+};
 
 UIComp.optionDialog = function(optArray, iDestructive, iCancel, sTitle)
 {
@@ -128,17 +128,17 @@ UIComp.optionDialog = function(optArray, iDestructive, iCancel, sTitle)
 		cancel: iCancel,
 		title: sTitle
 	});
-}
+};
 
 UIComp.tableViewRow = function()
 {
 	return Ti.UI.createTableViewRow();
-}
+};
 
 UIComp.tableViewSection = function()
 {
 	return Titanium.UI.createTableViewSection();
-}
+};
 
 UIComp.buttonBar = function(rLeft, rTop, rWidth, rHeight, arrlabels)
 {
@@ -171,7 +171,7 @@ UIComp.buttonBar = function(rLeft, rTop, rWidth, rHeight, arrlabels)
 				backgroundImage: config.imgPath+'global/title_bar/button_gray_normal.png'
 			});		
 		}; 
-}
+};
 
 UIComp.picker = function()
 {
@@ -179,7 +179,7 @@ UIComp.picker = function()
 		selectionIndicator: true,
 		width: 300
 	});
-}
+};
 
 UIComp.datePicker = function()
 {
@@ -188,7 +188,7 @@ UIComp.datePicker = function()
 		selectionIndicator: true,
 		width: 300
 	});
-}
+};
 
 UIComp.pickerRow = function(sTitle)
 {
@@ -196,7 +196,7 @@ UIComp.pickerRow = function(sTitle)
 		title: sTitle,
 		value: new Date()
 	});
-}
+};
 
 UIComp.textArea = function(rLeft, rTop, rWidth, rHeight)
 {
@@ -206,7 +206,7 @@ UIComp.textArea = function(rLeft, rTop, rWidth, rHeight)
 		width: rWidth,
 		height: rHeight
 	});
-}
+};
 
 UIComp.scrollableView = function(rLeft, rTop, rWidth, rHeight)
 {
@@ -216,7 +216,7 @@ UIComp.scrollableView = function(rLeft, rTop, rWidth, rHeight)
 		width: rWidth,
 		height: rHeight
 	});	
-}
+};
 
 UIComp.popOver = function(sTitle, rWidth, rHeight)
 {
@@ -225,7 +225,7 @@ UIComp.popOver = function(sTitle, rWidth, rHeight)
 		height: rHeight,
 		title: sTitle
 	});
-}
+};
 
 UIComp.searchBar = function(rTop, rHeight, bolShowCancel)
 {
@@ -234,6 +234,6 @@ UIComp.searchBar = function(rTop, rHeight, bolShowCancel)
 	    barColor:'#000', 
 	    showCancel:bolShowCancel,
 	    height:43,
-	    top:0
+	    top:rTop
 	});
-}
+};

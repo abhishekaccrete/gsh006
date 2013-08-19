@@ -6,7 +6,7 @@ config = {
 	viewPath: Ti.Filesystem.resourcesDirectory+'views/',
 	modelPath: Ti.Filesystem.resourcesDirectory+'model/',
 	imgPath: Ti.Filesystem.resourcesDirectory+'images/'
-}
+};
 try
 {
 	Titanium.include(config.viewPath+'mainView.js');
